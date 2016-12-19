@@ -1,0 +1,24 @@
+<legend>Users</legend>
+<p>
+  <%= link_to 'Create Random User', users_create_random_path %> | 
+  <%= link_to 'Destroy All', users_destroy_all_path %> | 
+  <%= link_to 'Refresh', root_path %>
+</p>
+<table>
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.first_name %></td>
+        <td><%= user.last_name %></td>
+        <td><%= user.email %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
