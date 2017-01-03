@@ -50,3 +50,4 @@ gem 'faker'
 
 
 gem 'sidekiq'
+gem 'sidekiq-cron'
